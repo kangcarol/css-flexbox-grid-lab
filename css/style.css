@@ -1,0 +1,95 @@
+html {
+  box-sizing: border-box
+}
+
+/* The Universal Selector */
+*, /* All elements*/
+*::before, /* All ::before pseudo-elements */
+*::after { /* All ::after pseudo-elements */
+  /* height & width will now include border & padding by default
+     but can be over-ridden as needed */
+  box-sizing: inherit;
+}
+
+/* resets font size to be 62.5% of the user preference -
+   in most browser configurations this will be 10px */
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: gray;
+/* Use a system font, if none are available use an available sans-sarif   font */
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  margin: 0;
+  text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+  align-items: center;
+}
+
+img {
+    border-radius: 50%;
+    border: 5px solid yellowgreen;
+
+}
+
+main {
+  background-color: white;
+  width: 350px;
+}
+
+#status {
+  color: gray;
+  padding: 5px 5px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+#brand {
+  display: none;
+}
+`
+#occupation {
+  background-color: rgb(240, 237, 237);
+  padding: 1px;
+  height: ;
+}
+
+#jobTitle {
+  font-size: 16px;
+}
+
+#largerFont {
+  font-size: 14px;
+}
+
+#price {
+  font-size: 12px;
+  vertical-align: center;
+}
+
+#phone {
+  background-color: greenyellow;
+  height: 60px;
+  width: 175px ;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+#message {
+  background-color: green;
+  height: 60px;
+  width: 175px ;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#contact {
+  display: inline-flex;
+}
