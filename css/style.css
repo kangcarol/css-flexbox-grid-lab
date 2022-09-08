@@ -31,13 +31,14 @@ body {
 }
 
 img {
-  margin: 30px;
+  margin: 20px;
   border-radius: 50%;
   border: 5px solid rgb(71, 146, 71);
 }
 
 main {
   background-color: white;
+
 }
 
 #status {
@@ -53,14 +54,13 @@ main {
 
 #occupation {
   background-color: rgb(228, 233, 229);
-  height: 50px;
-  width: 100vh;
+  width: 100%;
+  padding: 4px;
+  font-size: 15px;
 }
 
-#jobTitle {
-  font-size: 12px;
-  display: flex;
-  justify-content: center;
+#name {
+  padding: 0;
 }
 
 #offer {
@@ -70,11 +70,12 @@ main {
 #price {
   font-size: 12px;
   vertical-align: center;
+  padding: 0;
+  /* margin: 10px; */
 }
 
 #phone {
   background-color: rgb(173, 218, 102);
-  height: 40px;
   width: 50% ;
   display: flex;
   align-items: center;
@@ -84,7 +85,6 @@ main {
 
 #message {
   background-color: rgb(71, 146, 71);
-  height: 40px;
   width: 50%;
   display: flex;
   align-items: center;
@@ -119,35 +119,74 @@ main {
   main {
     display: grid;
     grid-template-columns: 40% 60%;
+    /* grid-template-rows: auto 1fr auto; */
     grid-template-rows: auto;
     grid-column-start: 2 ;
+    text-align: left;
+    background-color: white;
   }
+
 
   #status {
     grid-row-start: 1;
     grid-column-start: 1 ;
     justify-content: flex-start;
+    background-color: white;
   }
 
   img {
+    align-self: center;
     grid-column-start: 1 ;
-    grid-row: 2;
+    grid-row: 2 / 5;
+    /* background-color: white; */
+    justify-self: center;
   }
 
   #contact {
-    grid-column-start: 1 / 3 ;
+    grid-column-start: 1;
+    grid-row: 6;
+  }
+
+  #headerDiv {
+    background-color: rgb(228, 233, 229);
+  }
+
+  #name {
+    padding: 0 20px 0 20px;
+
   }
 
   #occupation {
     grid-column-start: 2 ;
+    grid-row: 2 / 4;
+    text-align: left;
+    /* vertical-align: center; */
+    /* text-align: left; */
+    padding: 0px 20px 0 20px;
+    background-color: rgb(228, 233, 229);
   }
 
-  #offer {
-    grid-column-start: 2 ;
-  }
 
   #brand {
     display: grid;
     grid-column-start: 2 ;
+    grid-row-start: 4 ;
+    font-size: 16px;
+    inline-size: 600px;
+    width: 100%;
+    padding: 0 20px 0 20px;
+    background-color: rgb(228, 233, 229);
+  }
+
+  #offer {
+    grid-row-start: 6;
+    grid-column-start: 2 ;
+    padding: 0 20px 0 20px;
+    background-color: rgb(228, 233, 229);
+  }
+
+  #brand > p {
+    border-left: 3px solid green;
+    padding: 0 20px 0 10px;
   }
 }
