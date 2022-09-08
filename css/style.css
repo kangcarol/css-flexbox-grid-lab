@@ -59,19 +59,26 @@ main {
   font-size: 15px;
 }
 
-#name {
+#occupation > p{
+  margin: 0;
+}
+
+h1 {
   padding: 0;
+  margin: 8px;
 }
 
 #offer {
   font-size: 14px;
+  padding: 0;
+  margin: 0;
 }
 
 #price {
   font-size: 12px;
   vertical-align: center;
   padding: 0;
-  /* margin: 10px; */
+  margin: 0 0 8px;
 }
 
 #phone {
@@ -80,7 +87,6 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
-
 }
 
 #message {
@@ -94,7 +100,7 @@ main {
 #contact {
   display: flex;
   justify-content: center;
-
+  height: 10%;
 }
 
 #contact > p {
@@ -102,9 +108,11 @@ main {
   width: 100%;
 }
 
-#occupation > p{
-  margin: 0;
+#offer > p {
+  margin: 8px 0;
+  width: 100%;
 }
+
 
 
 <!-- /* 1024px is a common "breakpoint" width for tablets */ -->
@@ -131,20 +139,19 @@ main {
     grid-row-start: 1;
     grid-column-start: 1 ;
     justify-content: flex-start;
-    background-color: white;
   }
 
   img {
     align-self: center;
     grid-column-start: 1 ;
     grid-row: 2 / 5;
-    /* background-color: white; */
     justify-self: center;
   }
 
   #contact {
     grid-column-start: 1;
     grid-row: 6;
+    height: 100%;
   }
 
   #headerDiv {
@@ -158,10 +165,8 @@ main {
 
   #occupation {
     grid-column-start: 2 ;
-    grid-row: 2 / 4;
+    grid-row: 2 / 3;
     text-align: left;
-    /* vertical-align: center; */
-    /* text-align: left; */
     padding: 0px 20px 0 20px;
     background-color: rgb(228, 233, 229);
   }
@@ -170,11 +175,11 @@ main {
   #brand {
     display: grid;
     grid-column-start: 2 ;
-    grid-row-start: 4 ;
+    grid-row-start: 3 / 5 ;
     font-size: 16px;
     inline-size: 600px;
     width: 100%;
-    padding: 0 20px 0 20px;
+    padding: 20px 20px 0 20px;
     background-color: rgb(228, 233, 229);
   }
 
